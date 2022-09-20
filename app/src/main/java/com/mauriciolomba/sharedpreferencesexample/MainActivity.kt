@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         if(firstTime()){
             showWelcomeDialog()
-            updateFirstTime()
+
         }
     }
 
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val builder: AlertDialog.Builder = AlertDialog.Builder(this)
         builder.apply {
             setMessage(R.string.dialog_title).setTitle(R.string.dialog_message)
-            setPositiveButton(android.R.string.ok) { _, _ -> /* Dismiss dialog */ }
+            setPositiveButton(android.R.string.ok) { _, _ -> updateFirstTime() }
             setCancelable(false)
         }
         val dialog: AlertDialog = builder.create()
