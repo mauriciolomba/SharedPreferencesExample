@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SharedPreferencesExample</string>
+    <string name="dialog_title">Welcome to app!</string>
+    <string name="dialog_message">This is the first time you use my app!</string>
+</resources>
